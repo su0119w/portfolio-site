@@ -2,64 +2,117 @@
 <html lang="zh-Hant-TW">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>袁御碩 | 作品集</title>
-    <link rel="stylesheet" href="me.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Su | 個人作品集</title>
+    <link rel="stylesheet" href="me.css" />
 </head>
 
 <body>
     <nav class="navbar">
         <div class="logo">
-            <img src="img/su.png" alt="logo">
-            <p>袁御碩</p>
+            <img src="img/su.png" alt="Su logo">
+            <p>Su</p>
         </div>
         <div class="nav-links">
             <a href="#home">首頁</a>
             <a href="#about">關於我</a>
+            <a href="#skills">技能</a>
             <a href="#projects">作品</a>
-            <a href="#contact">聯絡</a>
+            <a href="#contact">聯絡我</a>
         </div>
     </nav>
 
     <header class="hero" id="home">
-        <h1>你好，我是袁御碩</h1>
-        <p>我正在學習前端網頁設計，目標成為可以接案的工程師。</p>
+        <h1>我是 Su，正在成為全端工程師</h1>
+        <p>
+            目前專注學習 HTML、CSS、JavaScript、React，目標是在一年內達到可以自主接案的程度，
+            能獨立完成網站與簡易系統開發。
+        </p>
         <div class="hero-buttons">
-            <a href="#projects" class="btn">查看作品</a>
+            <a href="#projects" class="btn">看作品</a>
             <a href="#contact" class="btn btn-light">聯絡我</a>
         </div>
     </header>
 
     <section class="about" id="about">
         <h2>關於我</h2>
-        <p>我能製作具備搜尋、分類、排序與資料儲存功能的前端網站，
-            並具備基本 UI 設計與響應式排版能力。</p>
-        <p>我喜歡研究排版、做網站畫面，也希望未來能做出可以接案的作品。</p>
+        <p>
+            我是台中科技大學資訊應用菁英班的學生，目前 17 歲，正在系統化學習前端開發，
+            並一步一步往全端工程師的方向前進。
+        </p>
+        <p>
+            這段時間我已經完成多個 HTML、CSS、JavaScript 練習作品，也開始使用 React 製作互動式專案。
+            接下來我會持續補強 React、API 串接、後端與資料庫能力，希望在一年內達到可以獨立接小型網站案與簡易系統案的程度。
+        </p>
+        <p>
+            我目前最重視的是把基礎打穩，持續累積作品，讓自己不只是學過，而是真的能做出可以交付的專案。
+        </p>
+    </section>
+
+    <section class="Skills" id="skills">
+        <h2>技能</h2>
+        <div class="Skills-list">
+            <div class="Skills-card">
+                <h3>前端技術</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>RWD</li>
+                </ul>
+            </div>
+            <div class="Skills-card">
+                <h3>工具</h3>
+                <ul>
+                    <li>Git</li>
+                    <li>GitHub</li>
+                    <li>Vite</li>
+                </ul>
+            </div>
+            <div class="Skills-card">
+                <h3>正在學習</h3>
+                <ul>
+                    <li>API 串接</li>
+                    <li>Node.js</li>
+                    <li>Express</li>
+                    <li>PostgreSQL</li>
+                </ul>
+            </div>
+        </div>
     </section>
 
     <section class="projects" id="projects">
         <h2>我的作品</h2>
-        <label><input type="text" class="search-input" placeholder="搜尋作品..."></label>
-        <div class="filter-buttons">
-            <button class="filter-all filter-btn" data-type="all">全部</button>
-            <button class="filter-html filter-btn" data-type="html">HTML / CSS</button>
-            <button class="filter-js filter-btn" data-type="javascript">JavaScript</button>
-        </div>
-        <div class="card-list"></div>
+        <div class="card-list">
+            <article class="card">
+                <h3>Portfolio Site</h3>
+                <p>整理我的前端練習、個人首頁與作品展示內容，作為目前作品集的基礎版本。</p>
+                <p>技術：HTML / CSS / JavaScript</p>
+                <a href="https://github.com/su0119w/portfolio-site" target="_blank" rel="noreferrer">GitHub</a>
+            </article>
 
+            <article class="card">
+                <h3>React Stock</h3>
+                <p>使用 React 製作的股票查詢練習專案，包含搜尋、列表渲染與基礎狀態控制。</p>
+                <p>技術：React / Vite / JavaScript</p>
+                <a href="https://github.com/su0119w/react-stock" target="_blank" rel="noreferrer">GitHub</a>
+            </article>
+        </div>
     </section>
 
-
     <section class="contact" id="contact">
-        <h2>聯絡我</h2>
-        <p>如果你對網站製作有興趣，歡迎與我聯絡。</p>
-        <p>Email：yourmail@example.com</p>
-        <p>Instagram：@yourname</p>
+        <h2>如果你想看我的作品或和我交流，歡迎透過以下方式聯絡我</h2>
+        <div class="contact-a">
+            <a href="https://github.com/su0119w" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="mailto:yuanshuo.web@gmail.com">Email</a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+        </div>
     </section>
 
     <footer class="footer">
-        <p>© 2026 袁御碩</p>
+        <p>© 2026 Su. All Rights Reserved.</p>
     </footer>
 
     <script src="me.js"></script>
