@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>股票首頁</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-left">
+            <img src="img/su.png">
+            <h1>SU台股股市</h1>
+
+        </div>
+        <div class="header-search">
+            <input type="text" class="stock-input" placeholder="查詢股票">
+        </div>
+        <div class="header-nav">
+            <a href="#">首頁</a>
+            <a href="#">關於我</a>
+            <a href="#">自選股</a>
+        </div>
+
+    </header>
+    <nav>
+
+        <a href="#">大盤</a>
+        <a href="#">類股</a>
+        <a href="#">ETF專區</a>
+        <a href="#">漲幅排名</a>
+        <a href="#">跌幅排名</a>
+        <a href="#">成交量排名</a>
+
+    </nav>
+    <main>
+        <section>
+            <div class="main-content">
+                <div class="left">
+                    <h2>股票列表</h2>
+                    <button class="filter-all filter">全部</button>
+                    <button class="filter-up filter">上漲</button>
+                    <button class="filter-down filter">下跌</button>
+                    <button class="changeUp filter">漲幅高→低</button>
+                    <button class="priceUp filter">價格高→低</button>
+                    <select id="stock-select">
+                        <option value="all">全部</option>
+                        <option value="半導體">半導體</option>
+                        <option value="電子">電子</option>
+                        <option value="金融">金融</option>
+                    </select>
+                    <div class="stock-left"></div>
+                </div>
+                <aside class="right">
+                    <h2>右側資訊</h2>
+                    <div class="panel">
+                        <h3>股票詳細</h3>
+                        <div class="detail-box"></div>
+                    </div>
+                    <div class="panel">
+                        <h3>自選股</h3>
+                        <div class="favorite-list"></div>
+                    </div>
+
+                    <div class="panel">
+                        <h3>熱門股票</h3>
+                        <div class="hot-list"></div>
+                    </div>
+
+                    <div class="panel">
+                        <h3>最新新聞</h3>
+                        <div class="news-list"></div>
+                    </div>
+
+                </aside>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <p>2026@袁御碩</p>
+    </footer>
+    <script src="stocks copy.js"></script>
+</body>
+
+</html>

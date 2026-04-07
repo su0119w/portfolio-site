@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>袁御碩 | 作品集</title>
+    <link rel="stylesheet" href="me.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="img/su.png" alt="logo">
+            <p>袁御碩</p>
+        </div>
+        <div class="nav-links">
+            <a href="#home">首頁</a>
+            <a href="#about">關於我</a>
+            <a href="#projects">作品</a>
+            <a href="#contact">聯絡</a>
+        </div>
+    </nav>
+
+    <header class="hero" id="home">
+        <h1>你好，我是袁御碩</h1>
+        <p>我正在學習前端網頁設計，目標成為可以接案的工程師。</p>
+        <div class="hero-buttons">
+            <a href="#projects" class="btn">查看作品</a>
+            <a href="#contact" class="btn btn-light">聯絡我</a>
+        </div>
+    </header>
+
+    <section class="about" id="about">
+        <h2>關於我</h2>
+        <p>我能製作具備搜尋、分類、排序與資料儲存功能的前端網站，
+            並具備基本 UI 設計與響應式排版能力。</p>
+        <p>我喜歡研究排版、做網站畫面，也希望未來能做出可以接案的作品。</p>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2>我的作品</h2>
+        <label><input type="text" class="search-input" placeholder="搜尋作品..."></label>
+        <div class="filter-buttons">
+            <button class="filter-all filter-btn" data-type="all">全部</button>
+            <button class="filter-html filter-btn" data-type="html">HTML / CSS</button>
+            <button class="filter-js filter-btn" data-type="javascript">JavaScript</button>
+        </div>
+        <div class="card-list"></div>
+
+    </section>
+
+
+    <section class="contact" id="contact">
+        <h2>聯絡我</h2>
+        <p>如果你對網站製作有興趣，歡迎與我聯絡。</p>
+        <p>Email：yourmail@example.com</p>
+        <p>Instagram：@yourname</p>
+    </section>
+
+    <footer class="footer">
+        <p>© 2026 袁御碩</p>
+    </footer>
+
+    <script src="me.js"></script>
+</body>
+
+</html>
